@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts start from here>>>>>>>>>>>>>>> */
+
+@font-face {
+    font-family: "da";
+    src: url(Fonts/Deadly\ Advance.ttf);
+}
+@font-face {
+    font-family: "md";
+    src: url(Fonts/MODERNA_.TTF);
+}
+@font-face {
+    font-family: "CuteNotes";
+    src: url(Fonts/Cute\ Notes.ttf);
+}
+@font-face {
+    font-family: "french";
+    src: url(Fonts/Franchise.ttf);
+}
+@font-face {
+    font-family: "athletic";
+    src: url(Fonts/New\ Athletic\ M54.ttf);
+}
+
+body{
+    background-color: #FEFAEC;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    animation: PageTransition 4s;
+}
+
+/* Page 01 Starts here>>>>>>>>>>>>>>>>>> */
+
+.container1{
+    display: grid;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.playerNames{
+    font-family: da;
+    font-size: 10rem;
+    text-align: center;
+    font-weight: 70;
+    color: rgb(0, 0, 0);
+}
+
+#playButton{
+    font-family: "cuteNotes";
+    color: #FEFAEC;
+    background-color: red;
+    border: none;
+    margin: 5rem auto 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+#playButton:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.buttonDiv{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.container1>p{
+    color: red;
+    font-family: md;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#mudassar{
+    color: red;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+}
+
+#mudassar:hover{
+    color: rgb(0, 0, 0);
+}
+
+.playerNames>span{
+    color: red;
+}
+
+/* Page 2 Starts here>>>>>>>>>>>>> */
+
+
+.randomDiceGen {
+    font-family: "da";
+    font-size: 8rem;
+    font-weight: 80;
+    color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto auto;
+
+}
+
+.players{
+    display: flex;
+    place-content: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+
+}
+
+.player1{
+    width: 30rem;
+    height: 25rem;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 2rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+.player1>h3{
+    font-family: "da";
+    color: rgb(88, 0, 0);
+    font-size: 2rem;
+    font-weight: 20;
+    text-align: center;
+    margin: 2rem auto auto;
+}
+.player1>img{
+    width: 15rem;
+    margin: 2rem auto;
+    
+}
+.player2{
+    width: 30rem;
+    height: 25rem;
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 2rem;
+    margin-right: 5rem;
+}
+.player2>h3{
+    font-family: "da";
+    color: rgb(4, 49, 0);
+    font-size: 2rem;
+    font-weight: 20;
+    margin: 2rem auto auto;
+}
+.player2>img{
+    width: 15rem;
+    margin: 2rem auto;
+    
+}
+
+.player3{
+    width: 30rem;
+    height: 25rem;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 2rem;
+    margin-right: 5rem;
+}
+.player3>h3{
+    font-family: "da";
+    color: rgb(77, 78, 0);
+    font-size: 2rem;
+    font-weight: 20;
+    margin: 2rem auto auto;
+}
+.player3>img{
+    width: 15rem;
+    margin: 2rem auto;
+    
+}
+
+.player4{
+    width: 30rem;
+    height: 25rem;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 2rem;
+    margin-right: 5rem;
+}
+.player4>h3{
+    font-family: "da";
+    color: rgb(0, 5, 78);
+    font-size: 2rem;
+    margin: 2rem auto auto;
+}
+.player4>img{
+    width: 15rem;
+    margin: 2rem auto;
+    
+}
+
+#ranNumber1{
+    color: rgb(0, 0, 0);
+    font-family: french;
+    font-size: 15rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#ranNumber2{
+    color: rgb(0, 0, 0);
+    font-family: french;
+    font-size: 15rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#ranNumber3{
+    color: rgb(0, 0, 0);
+    font-family: french;
+    font-size: 15rem;
+    font-weight: 10;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#ranNumber4{
+    color: rgb(0, 0, 0);
+    font-family: french;
+    font-size: 15rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.refreshDiv{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#refreshMeButton{
+    font-family: "md";
+    color: #FEFAEC;
+    background-color: rgb(255, 71, 71);
+    border: 2px solid black;
+    margin: 5rem auto auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    transition: 0.15s;
+    
+}
+#refreshMeButton:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.container3>p {
+    font-family: md;
+    font-size: 2rem;
+    text-align: center;
+    margin: auto 3rem;
+    line-height: 6rem;
+}
+.container3>h1 {
+    color: black;
+    font-family: md;
+    font-size: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+}
+
+.diceImage {
+    display: flex;
+    place-content: center;
+}
+#diceImage2{
+    width: 50rem;
+    margin: 10rem auto 5rem;
+}
+.noDice{
+    font-family: da;
+    color: rgb(255, 0, 0);
+    font-size: 5rem;
+}
+footer{
+    height: 5rem;
+    background-color: rgb(255, 0, 0);
+    margin-top: 5rem;
+}
+footer>p{
+    color: rgb(255, 255, 255);
+    font-family: da;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/* Media Queries >>>>>>>>>>>>>> */
+
+@media(max-width:1600px){
+    html{
+        font-size: 60%;
+    }
+}
+@media(max-width:1000px){
+    html{
+        font-size: 40%;
+    }
+}
+@media(max-width:700px){
+    html{
+        font-size: 25%;
+    }
+}
+
