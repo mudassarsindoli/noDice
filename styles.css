@@ -28,11 +28,8 @@
 }
 
 body{
-    background-color: #FEFAEC;
+    background-color: #07617D;
     width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-    animation: PageTransition 4s;
 }
 
 /* Page 01 Starts here>>>>>>>>>>>>>>>>>> */
@@ -41,35 +38,33 @@ body{
     display: grid;
     align-content: center;
     width: 100%;
-    height: 100vh;
-    overflow-y: hidden;
+
 }
 
 .playerNames{
     font-family: da;
-    font-size: 10rem;
+    font-size: 6rem;
     text-align: center;
     font-weight: 70;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 #playButton{
     font-family: "cuteNotes";
     color: #FEFAEC;
-    background-color: red;
+    background-color: rgb(0, 0, 0);
     border: none;
-    margin: 5rem auto 5rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    border-radius: 2rem;
-    font-size: 2rem;
+    border-radius: 40px;
+    font-size: 3rem;
     transition: all 0.5s ease 0s;
     cursor: pointer;
 }
 #playButton:hover{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 0, 0);
 }
 
 .buttonDiv{
@@ -78,39 +73,47 @@ body{
     justify-content: center;
 }
 .container1>p{
-    color: red;
+    color: rgb(255, 255, 255);
     font-family: md;
     text-align: center;
-    font-size: 2rem;
+    font-size: 20px;
+    margin-bottom: 3rem;
 }
 
 #mudassar{
-    color: red;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     transition: all 0.5s ease 0s;
 }
 
 #mudassar:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .playerNames>span{
     color: red;
 }
 
-/* Page 2 Starts here>>>>>>>>>>>>> */
 
-
-.randomDiceGen {
-    font-family: "da";
-    font-size: 8rem;
-    font-weight: 80;
-    color: rgb(255, 0, 0);
+.dice1wrapper{
     display: flex;
     justify-content: center;
-    margin: 2rem auto auto;
-
+    margin-bottom: 30px;
+    margin-top: 200px;
 }
+
+.dice1wrapper img{
+    width: 60px;
+    margin: auto 20px;
+    transition: all 0.5s ease;
+}
+.dice1wrapper img:hover{
+    width: 80px;
+}
+
+
+
+/* Page 2 Starts here>>>>>>>>>>>>> */
 
 .players{
     display: flex;
@@ -118,124 +121,94 @@ body{
     width: 100%;
     text-align: center;
     margin-top: 5rem;
-
+    flex-wrap: wrap;
 }
 
 .player1{
-    width: 30rem;
-    height: 25rem;
+    width: 400px;
+    height: 700px;
     background-color: red;
     border: 2px solid black;
-    border-radius: 2rem;
-    margin-right: 5rem;
-    margin-left: 5rem;
+    border-radius: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 100px;
 }
 .player1>h3{
     font-family: "da";
     color: rgb(88, 0, 0);
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 20;
     text-align: center;
-    margin: 2rem auto auto;
+    margin: 30px auto auto;
 }
 .player1>img{
-    width: 15rem;
-    margin: 2rem auto;
-    
+    width: 200px;
+    margin: 50px auto;
 }
 .player2{
-    width: 30rem;
-    height: 25rem;
-    background-color: green;
+    width: 400px;
+    height: 700px;
+    background-color: rgb(0, 255, 55);
     border: 2px solid black;
-    border-radius: 2rem;
-    margin-right: 5rem;
+    border-radius: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 100px;
 }
 .player2>h3{
     font-family: "da";
     color: rgb(4, 49, 0);
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 20;
-    margin: 2rem auto auto;
+    margin: 30px auto auto;
 }
 .player2>img{
-    width: 15rem;
-    margin: 2rem auto;
+    width: 200px;
+    margin: 50px auto;
     
 }
 
 .player3{
-    width: 30rem;
-    height: 25rem;
-    background-color: yellow;
+    width: 400px;
+    height: 700px;
+    background-color: rgb(219, 255, 17);
     border: 2px solid black;
-    border-radius: 2rem;
-    margin-right: 5rem;
+    border-radius: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 100px;
 }
 .player3>h3{
     font-family: "da";
     color: rgb(77, 78, 0);
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 20;
-    margin: 2rem auto auto;
+    margin: 30px auto auto;
 }
 .player3>img{
-    width: 15rem;
-    margin: 2rem auto;
-    
+    width: 200px;
+    margin: 50px auto;
 }
 
 .player4{
-    width: 30rem;
-    height: 25rem;
-    background-color: blue;
+    width: 400px;
+    height: 700px;
+    background-color: rgb(0, 217, 255);
     border: 2px solid black;
-    border-radius: 2rem;
-    margin-right: 5rem;
+    border-radius: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .player4>h3{
     font-family: "da";
     color: rgb(0, 5, 78);
-    font-size: 2rem;
-    margin: 2rem auto auto;
+    font-size: 1.3rem;
+    margin: 30px auto auto;
 }
 .player4>img{
-    width: 15rem;
-    margin: 2rem auto;
-    
-}
-
-#ranNumber1{
-    color: rgb(0, 0, 0);
-    font-family: french;
-    font-size: 15rem;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-#ranNumber2{
-    color: rgb(0, 0, 0);
-    font-family: french;
-    font-size: 15rem;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-#ranNumber3{
-    color: rgb(0, 0, 0);
-    font-family: french;
-    font-size: 15rem;
-    font-weight: 10;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-#ranNumber4{
-    color: rgb(0, 0, 0);
-    font-family: french;
-    font-size: 15rem;
-    text-align: center;
-    margin-top: 2rem;
+    width: 200px;
+    margin: 50px auto;
 }
 
 .refreshDiv{
@@ -249,11 +222,9 @@ body{
     color: #FEFAEC;
     background-color: rgb(255, 71, 71);
     border: 2px solid black;
-    margin: 5rem auto auto;
+    margin: 1rem auto;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
     border-radius: 2rem;
     font-size: 2rem;
     transition: 0.15s;
@@ -263,63 +234,8 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
-.container3>p {
-    font-family: md;
-    font-size: 2rem;
-    text-align: center;
-    margin: auto 3rem;
-    line-height: 6rem;
-}
-.container3>h1 {
-    color: black;
-    font-family: md;
-    font-size: 5rem;
-    margin-top: 8rem;
-    margin-bottom: 3rem;
-    margin-left: 2rem;
-}
+#player1Text{
+    width: 30px;
+    scale: 5;
 
-.diceImage {
-    display: flex;
-    place-content: center;
 }
-#diceImage2{
-    width: 50rem;
-    margin: 10rem auto 5rem;
-}
-.noDice{
-    font-family: da;
-    color: rgb(255, 0, 0);
-    font-size: 5rem;
-}
-footer{
-    height: 5rem;
-    background-color: rgb(255, 0, 0);
-    margin-top: 5rem;
-}
-footer>p{
-    color: rgb(255, 255, 255);
-    font-family: da;
-    font-size: 2rem;
-    text-align: center;
-    padding-top: 1rem;
-}
-
-/* Media Queries >>>>>>>>>>>>>> */
-
-@media(max-width:1600px){
-    html{
-        font-size: 60%;
-    }
-}
-@media(max-width:1000px){
-    html{
-        font-size: 20%;
-    }
-}
-@media(max-width:700px){
-    html{
-        font-size: 25%;
-    }
-}
-
