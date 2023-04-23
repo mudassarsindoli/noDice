@@ -247,7 +247,7 @@ body{
 }
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1735px) {
     html{
         font-size: 80%;
     }
@@ -260,5 +260,60 @@ body{
     }
     #playButton{
         font-size: 2rem;
+    }
+    .player1{
+        width: 700px;
+        height: 400px;
+        background-color: red;
+        border: 2px solid black;
+        border-radius: 100px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 1px;
+    }
+    .player1>img{
+        width: 150px;
+        margin: 50px auto;
+    }
+    .player2{
+        width: 700px;
+        height: 400px;
+        background-color: rgb(0, 255, 55);
+        border: 2px solid black;
+        border-radius: 100px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 1px;
+    }
+    .player2>img{
+        width: 150px;
+        margin: 50px auto;
+    }
+    .player3{
+        width: 700px;
+        height: 400px;
+        background-color: rgb(219, 255, 17);
+        border: 2px solid black;
+        border-radius: 100px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 1px;
+    }
+    .player3>img{
+        width: 150px;
+        margin: 50px auto;
+    }
+    .player4{
+        width: 700px;
+        height: 400px;
+        background-color: rgb(0, 217, 255);
+        border: 2px solid black;
+        border-radius: 100px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .player4>img{
+        width: 150px;
+        margin: 50px auto;
     }
 }
