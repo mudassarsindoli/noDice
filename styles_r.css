@@ -6,9 +6,8 @@
 
 .body2{
     background-image: url(background_game);
-    background-color: red;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vmax 100vmax;
 }
 
 .players{
@@ -26,7 +25,7 @@
     border: 2px solid black;
     border-radius: 100px;
     margin: auto 20px;
-    box-shadow: 5px 5px 40px rgb(121, 121, 121);
+    box-shadow: 1px 1px 10px rgb(190, 190, 190);
 }
 .player1>h3{
     font-family: "da";
@@ -138,9 +137,8 @@
     }
     .body2{
         background-image: url(background_game);
-        background-color: red;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100vmax 100vmax;
     }
     
     .players{
@@ -270,9 +268,8 @@
     }
     .body2{
         background-image: url(background_game);
-        background-color: red;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100vmax 1000px;
     }
     
     .players{
@@ -281,7 +278,8 @@
         place-content: center;
         width: 100%;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 1px;
+        margin: 10px auto;
     }
     
     .player1{
@@ -391,7 +389,7 @@
         padding-left: 2rem;
         padding-right: 2rem;
         border-radius: 2rem;
-        font-size: 5rem;
+        font-size: 3rem;
         cursor: pointer;
         transition: all 0.3s ease; 
         
