@@ -135,7 +135,6 @@
 @media screen and (max-width: 1200px) {
     html{
         font-size: 50%;
-        min-height: 1500px;
     }
     .body2{
         background-image: url(background_game);
@@ -268,7 +267,6 @@
 @media screen and (max-width: 800px) {
     html{
         font-size: 60%;
-        min-height: 1500px;
     }
     .body2{
         background-image: url(background_game);
