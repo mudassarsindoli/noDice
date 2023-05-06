@@ -4,6 +4,29 @@
     box-sizing: border-box;
 }
 
+/* Fonts start from here>>>>>>>>>>>>>>> */
+
+@font-face {
+    font-family: "da";
+    src: url(Fonts/Deadly\ Advance.ttf);
+}
+@font-face {
+    font-family: "md";
+    src: url(Fonts/MODERNA_.TTF);
+}
+@font-face {
+    font-family: "CuteNotes";
+    src: url(Fonts/Cute\ Notes.ttf);
+}
+@font-face {
+    font-family: "french";
+    src: url(Fonts/Franchise.ttf);
+}
+@font-face {
+    font-family: "athletic";
+    src: url(Fonts/New\ Athletic\ M54.ttf);
+}
+
 .body2{
     background-image: url(background_game);
     background-repeat: no-repeat;
