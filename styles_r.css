@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -10,129 +10,140 @@
     font-family: "da";
     src: url(Fonts/Deadly\ Advance.ttf);
 }
+
 @font-face {
     font-family: "md";
     src: url(Fonts/MODERNA_.TTF);
 }
+
 @font-face {
     font-family: "CuteNotes";
     src: url(Fonts/Cute\ Notes.ttf);
 }
+
 @font-face {
     font-family: "french";
     src: url(Fonts/Franchise.ttf);
 }
+
 @font-face {
     font-family: "athletic";
     src: url(Fonts/New\ Athletic\ M54.ttf);
 }
 
-.body2{
-    background-image: url(background_game);
+body {
+    background-color: rgb(27, 27, 27);
     background-repeat: no-repeat;
     background-size: 100vmax 100vmax;
+    overflow-x: hidden;
 }
 
-.players{
+.players {
     display: flex;
     place-content: center;
     width: 100%;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 40px;
 }
 
-.player1{
+.player1 {
     width: 400px;
-    height: 600px;
+    height: 350px;
     background-color: red;
     border: 2px solid black;
     border-radius: 100px;
     margin: auto 20px;
     box-shadow: 1px 1px 10px rgb(190, 190, 190);
 }
-.player1>h3{
+
+.player1>h3 {
     font-family: "da";
     color: rgb(88, 0, 0);
     font-size: 1.3rem;
-    font-weight: 20;
     text-align: center;
     margin: 30px auto auto;
 }
-.player1>img{
+
+.player1>img {
     width: 200px;
-    margin: 20px auto;
+    margin: auto;
 }
-.player2{
+
+.player2 {
     width: 400px;
-    height: 600px;
+    height: 350px;
     background-color: rgb(0, 255, 55);
     border: 2px solid black;
     border-radius: 100px;
     margin: auto 20px;
-        box-shadow: 5px 5px 40px rgb(121, 121, 121);
+    box-shadow: 5px 5px 40px rgb(121, 121, 121);
 }
-.player2>h3{
+
+.player2>h3 {
     font-family: "da";
     color: rgb(4, 49, 0);
     font-size: 1.3rem;
-    font-weight: 20;
     margin: 30px auto auto;
 }
-.player2>img{
+
+.player2>img {
     width: 200px;
-    margin: 20px auto;
-    
+    margin: auto;
+
 }
 
-.player3{
+.player3 {
     width: 400px;
-    height: 600px;
+    height: 350px;
     background-color: rgb(219, 255, 17);
     border: 2px solid black;
     border-radius: 100px;
     margin: auto 20px;
-        box-shadow: 5px 5px 40px rgb(121, 121, 121);
+    box-shadow: 5px 5px 40px rgb(121, 121, 121);
 }
-.player3>h3{
+
+.player3>h3 {
     font-family: "da";
     color: rgb(77, 78, 0);
     font-size: 1.3rem;
-    font-weight: 20;
     margin: 30px auto auto;
 }
-.player3>img{
+
+.player3>img {
     width: 200px;
-    margin: 20px auto;
+    margin: auto;
 }
 
-.player4{
+.player4 {
     width: 400px;
-    height: 600px;
+    height: 350px;
     background-color: rgb(0, 217, 255);
     border: 2px solid black;
     border-radius: 100px;
     margin: auto 20px;
-        box-shadow: 5px 5px 40px rgb(121, 121, 121);
+    box-shadow: 5px 5px 40px rgb(121, 121, 121);
 }
-.player4>h3{
+
+.player4>h3 {
     font-family: "da";
     color: rgb(0, 5, 78);
     font-size: 1.3rem;
     margin: 30px auto auto;
 }
-.player4>img{
+
+.player4>img {
     width: 200px;
-    margin: 20px auto;
+    margin: auto;
 }
 
-.refreshDiv{
+.refreshDiv {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin: 5rem auto;
+    margin: 7rem auto auto;
 }
 
-#refreshMeButton{
+#refreshMeButton {
     font-family: "md";
     color: #FEFAEC;
     background-color: rgb(255, 71, 71);
@@ -140,131 +151,156 @@
     padding-left: 2rem;
     padding-right: 2rem;
     border-radius: 2rem;
-    font-size: 4rem;
+    font-size: 3rem;
     cursor: pointer;
-    transition: all 0.3s ease; 
-    
+    transition: all 0.3s ease;
+    margin-bottom: 40px;
 }
-#refreshMeButton:hover{
+
+#refreshMeButton:hover {
     background-color: rgb(0, 0, 0);
 }
 
+#slider {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(27, 27, 27);
+    position: absolute;
+    animation-name: sliderBar;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
 
+@keyframes sliderBar {
+    from {
+        top: 0vh;
+    }
 
+    to {
+        top: 100vh;
+    }
+}
 
 
 
 @media screen and (max-width: 1200px) {
-    html{
+    html {
         font-size: 50%;
     }
-    .body2{
+
+    .body2 {
         background-image: url(background_game);
         background-repeat: no-repeat;
         background-size: 100vmax 100vmax;
     }
-    
-    .players{
+
+    .players {
         display: flex;
         flex-wrap: wrap;
         place-content: center;
         width: 100%;
         text-align: center;
-        margin: 100px auto;
     }
-    
-    .player1{
+
+    .player1 {
         width: 200px;
         height: 300px;
         background-color: red;
         border: 2px solid black;
-        border-radius: 100px;
+        border-radius: 40px;
         margin: auto;
         box-shadow: 5px 5px 40px rgb(121, 121, 121);
     }
-    .player1>h3{
+
+    .player1>h3 {
         font-family: "da";
         color: rgb(88, 0, 0);
         font-size: 1.3rem;
-        font-weight: 20;
         text-align: center;
         margin: 30px auto auto;
     }
-    .player1>img{
+
+    .player1>img {
         width: 100px;
         margin: 10px auto;
     }
-    .player2{
+
+    .player2 {
         width: 200px;
         height: 300px;
         background-color: rgb(0, 255, 55);
         border: 2px solid black;
-        border-radius: 100px;
+        border-radius: 40px;
         margin: auto;
-            box-shadow: 5px 5px 40px rgb(121, 121, 121);
+        box-shadow: 5px 5px 40px rgb(121, 121, 121);
     }
-    .player2>h3{
+
+    .player2>h3 {
         font-family: "da";
         color: rgb(4, 49, 0);
         font-size: 1.3rem;
-        font-weight: 20;
         margin: 30px auto auto;
     }
-    .player2>img{
+
+    .player2>img {
         width: 100px;
         margin: 10px auto;
-        
+
     }
-    
-    .player3{
+
+    .player3 {
         width: 200px;
         height: 300px;
         background-color: rgb(219, 255, 17);
         border: 2px solid black;
-        border-radius: 100px;
+        border-radius: 40px;
         margin: auto;
-            box-shadow: 5px 5px 40px rgb(121, 121, 121);
+        box-shadow: 5px 5px 40px rgb(121, 121, 121);
     }
-    .player3>h3{
+
+    .player3>h3 {
         font-family: "da";
         color: rgb(77, 78, 0);
         font-size: 1.3rem;
-        font-weight: 20;
         margin: 30px auto auto;
     }
-    .player3>img{
+
+    .player3>img {
         width: 100px;
         margin: 10px auto;
     }
-    
-    .player4{
+
+    .player4 {
         width: 200px;
         height: 300px;
         background-color: rgb(0, 217, 255);
         border: 2px solid black;
-        border-radius: 100px;
+        border-radius: 40px;
         margin: auto;
-            box-shadow: 5px 5px 40px rgb(121, 121, 121);
+        box-shadow: 5px 5px 40px rgb(121, 121, 121);
     }
-    .player4>h3{
+
+    .player4>h3 {
         font-family: "da";
         color: rgb(0, 5, 78);
         font-size: 1.3rem;
         margin: 30px auto auto;
     }
-    .player4>img{
+
+    .player4>img {
         width: 100px;
         margin: 10px auto;
     }
-    
-    .refreshDiv{
+
+    .refreshDiv {
         display: flex;
         width: 100%;
         justify-content: center;
-        margin: 5rem auto;
+        margin: 8rem auto;
     }
-    
-    #refreshMeButton{
+
+    #refreshMeButton {
         font-family: "md";
         color: #FEFAEC;
         background-color: rgb(255, 71, 71);
@@ -272,12 +308,13 @@
         padding-left: 2rem;
         padding-right: 2rem;
         border-radius: 2rem;
-        font-size: 4rem;
+        font-size: 6rem;
         cursor: pointer;
-        transition: all 0.3s ease; 
-        
+        transition: all 0.3s ease;
+
     }
-    #refreshMeButton:hover{
+
+    #refreshMeButton:hover {
         background-color: rgb(0, 0, 0);
     }
 }
@@ -286,16 +323,17 @@
 
 
 @media screen and (max-width: 800px) {
-    html{
+    html {
         font-size: 60%;
     }
-    .body2{
+
+    .body2 {
         background-image: url(background_game);
         background-repeat: no-repeat;
         background-size: 100vmax 1000px;
     }
-    
-    .players{
+
+    .players {
         display: flex;
         flex-wrap: wrap;
         place-content: center;
@@ -304,8 +342,8 @@
         padding-top: 1px;
         margin: 10px auto;
     }
-    
-    .player1{
+
+    .player1 {
         width: 100%;
         height: 100px;
         display: flex;
@@ -315,20 +353,22 @@
         margin: 10px auto;
         box-shadow: 5px 5px 40px rgb(121, 121, 121);
     }
-    .player1>h3{
-        width: 150px;
+
+    .player1>h3 {
         font-family: "da";
         color: rgb(88, 0, 0);
         font-size: 1.3rem;
-        font-weight: 20;
-        text-align: center;
-        margin: auto;
+        text-align: left;
+        margin: auto 2rem;
+        flex-grow: 1;
     }
-    .player1>img{
+
+    .player1>img {
         width: 60px;
-        margin: 10px auto;
+        margin: auto 1rem;
     }
-    .player2{
+
+    .player2 {
         width: 100%;
         height: 100px;
         display: flex;
@@ -338,21 +378,22 @@
         margin: 10px auto;
         box-shadow: 5px 5px 40px rgb(121, 121, 121);
     }
-    .player2>h3{
-        width: 150px;
+
+    .player2>h3 {
         font-family: "da";
         color: rgb(4, 49, 0);
         font-size: 1.3rem;
-        font-weight: 20;
-        margin: auto;
+        text-align: left;
+        margin: auto 2rem;
+        flex-grow: 1;
     }
-    .player2>img{
+
+    .player2>img {
         width: 60px;
-        margin: 10px auto;
-        
+        margin: auto 1rem;
     }
-    
-    .player3{
+
+    .player3 {
         width: 100%;
         height: 100px;
         display: flex;
@@ -362,20 +403,22 @@
         margin: 10px auto;
         box-shadow: 5px 5px 40px rgb(121, 121, 121);
     }
-    .player3>h3{
-        width: 150px;
+
+    .player3>h3 {
         font-family: "da";
         color: rgb(77, 78, 0);
         font-size: 1.3rem;
-        font-weight: 20;
-        margin: auto;
+        text-align: left;
+        margin: auto 2rem;
+        flex-grow: 1;
     }
-    .player3>img{
+
+    .player3>img {
         width: 60px;
-        margin: 10px auto;
+        margin: auto 1rem;
     }
-    
-    .player4{
+
+    .player4 {
         width: 100%;
         height: 100px;
         display: flex;
@@ -385,26 +428,29 @@
         margin: 10px auto;
         box-shadow: 5px 5px 40px rgb(121, 121, 121);
     }
-    .player4>h3{
-        width: 150px;
+
+    .player4>h3 {
         font-family: "da";
         color: rgb(0, 5, 78);
         font-size: 1.3rem;
-        margin: auto;
+        text-align: left;
+        margin: auto 1rem;
+        flex-grow: 1;
     }
-    .player4>img{
+
+    .player4>img {
         width: 60px;
-        margin: 10px auto;
+        margin: auto 1rem;
     }
-    
-    .refreshDiv{
+
+    .refreshDiv {
         display: flex;
         width: 100%;
         justify-content: center;
         margin: 5rem auto;
     }
-    
-    #refreshMeButton{
+
+    #refreshMeButton {
         font-family: "md";
         color: #FEFAEC;
         background-color: rgb(255, 71, 71);
@@ -414,10 +460,11 @@
         border-radius: 2rem;
         font-size: 3rem;
         cursor: pointer;
-        transition: all 0.3s ease; 
-        
+        transition: all 0.3s ease;
+
     }
-    #refreshMeButton:hover{
+
+    #refreshMeButton:hover {
         background-color: rgb(0, 0, 0);
     }
 }
