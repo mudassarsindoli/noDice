@@ -32,7 +32,7 @@
 }
 
 body {
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(0, 0, 0);
     background-repeat: no-repeat;
     background-size: 100vmax 100vmax;
     overflow-x: hidden;
@@ -164,7 +164,7 @@ body {
 #slider {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(0, 0, 0);
     position: absolute;
     animation-name: sliderBar;
     animation-duration: 2s;
