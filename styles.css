@@ -37,10 +37,7 @@
 }
 
 .content {
-    background-image: url(main.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: #000000;
     width: 100vw;
     height: 100vh;
 }
@@ -48,12 +45,13 @@
 .playerNames {
     font-family: da;
     margin-top: 170px;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 4.5rem;
     font-weight: 70;
     color: rgb(255, 255, 255);
     background-color: rgb(27, 27, 27);
-    width: 100vw;
+    width: fit-content;
     padding: 30px;
     border: 3px solid white;
 }
@@ -110,16 +108,13 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
     html {
         font-size: 50%;
     }
 
     .container1 {
-        background-image: url(main.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background-color: #000000;
         width: 100vw;
         height: 100vh;
     }
@@ -133,6 +128,7 @@
         text-align: center;
         margin-right: auto;
         margin-left: auto;
+        width: fit-content;
     }
 
     .buttonDiv {
@@ -157,16 +153,13 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     html {
         font-size: 40%;
     }
 
     .container1 {
-        background-image: url(main.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background-color: #000000;
         width: 100vw;
         height: 100vh;
     }
@@ -175,7 +168,7 @@
         margin-top: 200px;
         font-size: 3rem;
         text-align: center;
-        width: 100vw;
+        width: fit-content;
     }
 
     #playButton {
@@ -191,13 +184,13 @@
 
     .paraghDiv {
         display: flex;
-        justify-content: center;
     }
 
     .paraghDiv>p {
         color: rgb(255, 255, 255);
         font-family: md;
-        text-align: center;
-        font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.5rem;
     }
 }
